@@ -9,8 +9,6 @@ namespace ThreeCardPoker
     class Deck
     {
         private List<Card> cards;
-        private const int numberOfCards = 52;
-        private Face face;
         public Deck()
         {
             //initialize 52 cards

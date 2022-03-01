@@ -169,8 +169,8 @@ namespace ThreeCardPoker
                 Card secondGroupMaxCard = getMaxCard(groupOfCards);
                 return firstGroupMaxCard.CompareTo(secondGroupMaxCard);
             }
-            //if its pairs or highcards we might need to check each card
-            if (this.ranking == Ranking.HighCard)
+            //if its Flushs or highcards we might need to check each card
+            if (this.ranking == Ranking.HighCard || this.ranking == Ranking.Flush)
             {
                 //check highest card first
                 if (getMaxCard(this).CompareTo(getMaxCard(groupOfCards)) != 0)
